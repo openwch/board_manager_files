@@ -1,0 +1,72 @@
+{
+  "packages": [
+    {
+      "name": "WCH",
+      "websiteURL": "https://www.wch.cn/",
+      "maintainer": "WCH",
+      "email": "tech@wch.cn",
+      "help": {
+        "online": "https://www.wch.cn/"
+      },
+      "platforms": [
+        {
+          "name": "CH32 MCU EVT Boards",
+          "architecture": "ch32v",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://codeload.github.com/openwch/arduino_core_ch32/zip/refs/tags/1.0.0",
+          "archiveFileName": "arduino_core_ch32-1.0.0.zip",
+          "checksum": "SHA-256:6FD92A6C0054979A460E6C14AC656FBACAC3BEFAB92F33D4B1B7C0A0E035FD86",
+          "size": "411583",
+          "boards": [
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V00x EVT Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "WCH",
+              "name": "riscv-none-embed-gcc",
+              "version": "8.2.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "openocd",
+              "version": "1.0.0"
+            }
+          ]
+        }
+      ],
+      "tools": [
+        {
+          "name": "riscv-none-embed-gcc",
+          "version": "8.2.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://codeload.github.com/openwch/risc-none-embed-gcc/zip/refs/tags/8.2.0",
+              "archiveFileName": "risc-none-embed-gcc-8.2.0.zip",
+              "checksum": "SHA-256:43DF880A1908C873A8B6AB115568C6BEAEEC41DDADEB5202703B6AA9FDE50626",
+              "size": "267710516"
+            }
+          ]
+        },
+        {
+          "name": "openocd",
+          "version": "1.0.0",
+          "systems":
+          [
+            {
+              "host": "i686-mingw32",
+              "url": "https://codeload.github.com/openwch/openocd_wch/zip/refs/tags/1.0.0",
+              "archiveFileName": "openocd_wch-1.0.0.zip",
+              "checksum": "SHA-256:F1E54FD7F253CF37E7F4581088FF62DFDFDAB899B9D3182C36426F6146AE0465",
+              "size": "9604774"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+
