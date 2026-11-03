@@ -45,7 +45,7 @@
           "checksum": "SHA-256:964E924D3B2CA648DD70F3E1D87BBB2E62869F9ECA23604745060A1B4AA26739",
           "size": "553015",
           "boards": [
-            {"name": "CH32X035 EVT Board"},		  
+            {"name": "CH32X035 EVT Board"},
             {"name": "CH32V20x EVT Board"},
             {"name": "CH32V00x EVT Board"}
           ],
@@ -72,7 +72,7 @@
           "checksum": "SHA-256:C7CF46D0AA447B78FBF239251085D009B47F436B3A22C14AC116D7FA4E492397",
           "size": "583402",
           "boards": [
-            {"name": "CH32X035 EVT Board"},		  
+            {"name": "CH32X035 EVT Board"},
             {"name": "CH32V20x EVT Board"},
             {"name": "CH32V00x EVT Board"}
           ],
@@ -99,10 +99,10 @@
           "checksum": "SHA-256:233B4DC7D1930BBE93FC0F00964ADFC24DDC012585121D113F98CEF8652A1362",
           "size": "964954",
           "boards": [
-            {"name": "CH32X035 EVT Board"},		  
+            {"name": "CH32X035 EVT Board"},
             {"name": "CH32V30x EVT Board"},
-            {"name": "CH32V20x EVT Board"},			
-            {"name": "CH32V10x EVT Board"},			
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V10x EVT Board"},
             {"name": "CH32V00x EVT Board"}
           ],
           "toolsDependencies": [
@@ -128,10 +128,10 @@
           "checksum": "SHA-256:8F4E975F763183791AAAC5E537584DFD13DD044BD5DC05D09B0E2C7DECCD14C5",
           "size": "980095",
           "boards": [
-            {"name": "CH32X035 EVT Board"},		  
+            {"name": "CH32X035 EVT Board"},
             {"name": "CH32V30x EVT Board"},
-            {"name": "CH32V20x EVT Board"},			
-            {"name": "CH32V10x EVT Board"},			
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V10x EVT Board"},
             {"name": "CH32V00x EVT Board"}
           ],
           "toolsDependencies": [
@@ -149,16 +149,51 @@
               "packager": "WCH",
               "name": "beforeinstall",
               "version": "1.0.0"
-            }			
+            }
           ]
-        }		
+        },
+        {
+          "name": "CH32 MCU EVT Boards",
+          "architecture": "ch32v",
+          "version": "1.0.5",
+          "category": "Contributed",
+          "url": "https://codeload.github.com/openwch/arduino_core_ch32/zip/refs/tags/1.0.5",
+          "archiveFileName": "arduino_core_ch32-1.0.5.zip",
+          "checksum": "SHA-256:263F4A014583D8B2A2D6A0BD661BA012747CBD134C18FEC4C3B6AD05F1076217",
+          "size": "1376953",
+          "boards": [
+            {"name": "CH32V00x EVT Board"},
+            {"name": "CH32VM00X EVT Board"},
+            {"name": "CH32X035 EVT Board"},
+            {"name": "CH32V10x EVT Board"},
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V30x EVT Board"},
+            {"name": "CH32L10x EVT Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "WCH",
+              "name": "riscv-wch-gcc",
+              "version": "15.2.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "openocd-wch",
+              "version": "2.10.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "beforeinstall",
+              "version": "1.0.0"
+            }
+          ]
+        }
       ],
       "tools": [
         {
           "name": "riscv-none-embed-gcc",
           "version": "8.2.0",
-          "systems":
-          [
+          "systems": [
             {
               "host": "i686-mingw32",
               "url": "https://codeload.github.com/openwch/risc-none-embed-gcc/zip/refs/tags/8.2.0",
@@ -166,27 +201,26 @@
               "checksum": "SHA-256:43DF880A1908C873A8B6AB115568C6BEAEEC41DDADEB5202703B6AA9FDE50626",
               "size": "267710516"
             },
-			{
+            {
               "host": "x86_64-linux-gnu",
               "url": "https://codeload.github.com/TianpeiLee/wch_gcc_8_linux/tar.gz/refs/tags/8.2.0",
               "archiveFileName": "wch_gcc_8_linux-8.2.0.tar.gz",
               "checksum": "SHA-256:967FB021E5689FF79A06A71C7E54FB7FACE418D5E9B27EC64F5E56687557A282",
-              "size": "245443061"				
-			},
-			{
+              "size": "245443061"
+            },
+            {
               "host": "x86_64-apple-darwin",
               "url": "https://codeload.github.com/TianpeiLee/wch_gcc_macos/tar.gz/refs/tags/8.2.0",
               "archiveFileName": "wch_gcc_macos-8.2.0.tar.gz",
               "checksum": "SHA-256:E14538AE7B621DE798C2466B338A4174CCE22C9CF12E5C1684C0995931738260",
-              "size": "160591401"				
-			}			
+              "size": "160591401"
+            }
           ]
         },
         {
           "name": "openocd",
           "version": "1.0.0",
-          "systems":
-          [
+          "systems": [
             {
               "host": "i686-mingw32",
               "url": "https://codeload.github.com/openwch/openocd_wch/zip/refs/tags/1.0.0",
@@ -207,14 +241,13 @@
               "archiveFileName": "wch_openocd_macos-1.0.0.tar.gz",
               "checksum": "SHA-256:100DC6A75E302D5E3FF7548FE64351AA545353982BA22C19D43555F3A748BE0E",
               "size": "1995618"
-            }			
+            }
           ]
         },
         {
           "name": "beforeinstall",
           "version": "1.0.0",
-          "systems":
-          [
+          "systems": [
             {
               "host": "x86_64-linux-gnu",
               "url": "https://codeload.github.com/TianpeiLee/wch_beforeinstall_linux/tar.gz/refs/tags/1.0.0",
@@ -235,11 +268,50 @@
               "archiveFileName": "wch_beforeinstall_linux-1.0.0.tar.gz",
               "checksum": "SHA-256:17EF3A94BC46B9EB9AB1FDECC48FCD3880EEB8FCC36E6648626320F0BF2864DC",
               "size": "507269"
-            }				
+            }
           ]
-        }		
+        },
+        {
+          "name": "riscv-wch-gcc",
+          "version": "15.2.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/riscv-wch-gcc-15.2.0/riscv-wch-gcc-15.2.0-windows.zip",
+              "archiveFileName": "riscv-wch-gcc-15.2.0-windows.zip",
+              "checksum": "SHA-256:34D9D99141C131FEB32E274B526352BEE5B429883861132A5A66C145E0D0D0E4",
+              "size": "238453577"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/riscv-wch-gcc-15.2.0/riscv-wch-gcc-15.2.0-linux-x86_64.tar.gz",
+              "archiveFileName": "riscv-wch-gcc-15.2.0-linux-x86_64.tar.gz",
+              "checksum": "SHA-256:D58478F91C134EDFB76D73CD82E9A7FFF4C74DD9369C591E92567757F4A153CF",
+              "size": "239741256"
+            }
+          ]
+        },
+        {
+          "name": "openocd-wch",
+          "version": "2.10.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/openocd-wch-2.10.0/openocd-wch-2.10-windows.zip",
+              "archiveFileName": "openocd-wch-2.10-windows.zip",
+              "checksum": "SHA-256:F8AD8302C8A82576A4842B4E09BA1262B1CA326C0D13B7FBBED650020B68A564",
+              "size": "11605754"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/openocd-wch-2.10.0/openocd-wch-2.10-linux-x86_64.tar.gz",
+              "archiveFileName": "openocd-wch-2.10-linux-x86_64.tar.gz",
+              "checksum": "SHA-256:F9F26697CCB402FA698E6F31E123C613241355A5207A896C5C430147E1EDBB2E",
+              "size": "2483725"
+            }
+          ]
+        }
       ]
     }
   ]
 }
-
