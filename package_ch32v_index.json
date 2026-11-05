@@ -184,7 +184,7 @@
             {
               "packager": "WCH",
               "name": "beforeinstall",
-              "version": "1.0.0"
+              "version": "2.0.0"
             }
           ]
         }
@@ -308,6 +308,40 @@
               "archiveFileName": "openocd-wch-2.10-linux-x86_64.tar.gz",
               "checksum": "SHA-256:F9F26697CCB402FA698E6F31E123C613241355A5207A896C5C430147E1EDBB2E",
               "size": "2483725"
+            }
+          ]
+        },
+        {
+          "name": "beforeinstall",
+          "version": "2.0.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/beforeinstall-2.0.0/beforeinstall-2.0.0-empty.tar.gz",
+              "archiveFileName": "beforeinstall-2.0.0-empty.tar.gz",
+              "checksum": "SHA-256:56F09C44005838B9451072615D5223AC16FEDAF92364E0BF2D7273C15E1D33FB",
+              "size": "187"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/beforeinstall-2.0.0/beforeinstall-2.0.0-linux.tar.gz",
+              "archiveFileName": "beforeinstall-2.0.0-linux.tar.gz",
+              "checksum": "SHA-256:5944B788F5046A36906F11E262FFD7175A639023BD274CFAF3E6A5871516D908",
+              "size": "3085"
+            },
+            {
+              "host": "x86_64-apple-darwin",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/beforeinstall-2.0.0/beforeinstall-2.0.0-empty.tar.gz",
+              "archiveFileName": "beforeinstall-2.0.0-empty.tar.gz",
+              "checksum": "SHA-256:56F09C44005838B9451072615D5223AC16FEDAF92364E0BF2D7273C15E1D33FB",
+              "size": "187"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/beforeinstall-2.0.0/beforeinstall-2.0.0-empty.tar.gz",
+              "archiveFileName": "beforeinstall-2.0.0-empty.tar.gz",
+              "checksum": "SHA-256:56F09C44005838B9451072615D5223AC16FEDAF92364E0BF2D7273C15E1D33FB",
+              "size": "187"
             }
           ]
         }
