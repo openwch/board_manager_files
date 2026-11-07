@@ -187,6 +187,42 @@
               "version": "2.0.0"
             }
           ]
+        },
+        {
+          "name": "CH32 MCU EVT Boards",
+          "architecture": "ch32v",
+          "version": "1.0.6",
+          "category": "Contributed",
+          "url": "https://github.com/openwch/arduino_core_ch32/releases/download/1.0.6/arduino_core_ch32-1.0.6.zip",
+          "archiveFileName": "arduino_core_ch32-1.0.6.zip",
+          "checksum": "SHA-256:857EE4473489F5E2F29AB0E13DE9F50BC14C04244DB66600860FCFC183942E59",
+          "size": "2089777",
+          "boards": [
+            {"name": "CH32V00x EVT Board"},
+            {"name": "CH32VM00X EVT Board"},
+            {"name": "CH32X035 EVT Board"},
+            {"name": "CH32V10x EVT Board"},
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V30x EVT Board"},
+            {"name": "CH32L10x EVT Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "WCH",
+              "name": "riscv-wch-gcc",
+              "version": "15.2.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "openocd-wch",
+              "version": "2.10.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "beforeinstall",
+              "version": "2.0.0"
+            }
+          ]
         }
       ],
       "tools": [
