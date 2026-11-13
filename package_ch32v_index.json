@@ -223,6 +223,43 @@
               "version": "2.0.0"
             }
           ]
+        },
+        {
+          "name": "CH32 MCU EVT Boards",
+          "architecture": "ch32v",
+          "version": "1.0.7",
+          "category": "Contributed",
+          "url": "https://github.com/openwch/arduino_core_ch32/releases/download/1.0.7/arduino_core_ch32-1.0.7.zip",
+          "archiveFileName": "arduino_core_ch32-1.0.7.zip",
+          "checksum": "SHA-256:1A6064B63CCAE87E1727900E0D3D8889977E997661A814B13F83C9692D763340",
+          "size": "2344968",
+          "boards": [
+            {"name": "CH32V00x EVT Board"},
+            {"name": "CH32VM00X EVT Board"},
+            {"name": "CH32X035 EVT Board"},
+            {"name": "CH32V10x EVT Board"},
+            {"name": "CH32V20x EVT Board"},
+            {"name": "CH32V30x EVT Board"},
+            {"name": "CH32L10x EVT Board"},
+            {"name": "CH32V4x7 EVT Board"}
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "WCH",
+              "name": "riscv-wch-gcc",
+              "version": "15.2.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "openocd-wch",
+              "version": "2.12.0"
+            },
+            {
+              "packager": "WCH",
+              "name": "beforeinstall",
+              "version": "2.0.0"
+            }
+          ]
         }
       ],
       "tools": [
@@ -324,6 +361,13 @@
               "archiveFileName": "riscv-wch-gcc-15.2.0-linux-x86_64.tar.gz",
               "checksum": "SHA-256:D58478F91C134EDFB76D73CD82E9A7FFF4C74DD9369C591E92567757F4A153CF",
               "size": "239741256"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/riscv-wch-gcc-15.2.0/riscv-wch-gcc-15.2.0-macos-arm64.tar.gz",
+              "archiveFileName": "riscv-wch-gcc-15.2.0-macos-arm64.tar.gz",
+              "checksum": "SHA-256:67483328687F4CAFA38EDF7B54622101B3A4B31ED23FC1B48F9359C081D99444",
+              "size": "301246715"
             }
           ]
         },
@@ -378,6 +422,33 @@
               "archiveFileName": "beforeinstall-2.0.0-empty.tar.gz",
               "checksum": "SHA-256:56F09C44005838B9451072615D5223AC16FEDAF92364E0BF2D7273C15E1D33FB",
               "size": "187"
+            }
+          ]
+        },
+        {
+          "name": "openocd-wch",
+          "version": "2.12.0",
+          "systems": [
+            {
+              "host": "i686-mingw32",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/openocd-wch-2.12.0/openocd-wch-2.12.0-windows.zip",
+              "archiveFileName": "openocd-wch-2.12.0-windows.zip",
+              "checksum": "SHA-256:F8AD8302C8A82576A4842B4E09BA1262B1CA326C0D13B7FBBED650020B68A564",
+              "size": "11605754"
+            },
+            {
+              "host": "x86_64-linux-gnu",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/openocd-wch-2.12.0/openocd-wch-2.12.0-linux-x86_64.tar.gz",
+              "archiveFileName": "openocd-wch-2.12.0-linux-x86_64.tar.gz",
+              "checksum": "SHA-256:AA57371AFF3146C5021B16DC226CF70135AE75962CDA3EE7D0FAD66E4ACF17D8",
+              "size": "2483874"
+            },
+            {
+              "host": "arm64-apple-darwin",
+              "url": "https://github.com/medtty/board_manager_files/releases/download/openocd-wch-2.12.0/openocd-wch-2.12.0-macos-arm64.tar.gz",
+              "archiveFileName": "openocd-wch-2.12.0-macos-arm64.tar.gz",
+              "checksum": "SHA-256:8B6848D0FE5BFEC28045328B15752333FC6EDB76558032AD24B91999F5B41EB5",
+              "size": "3331641"
             }
           ]
         }
